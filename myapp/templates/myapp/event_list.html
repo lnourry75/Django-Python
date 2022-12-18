@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="../../static//myapp/style.css">
+
+{% block content %}
+
+<h1>Events</h1>
+<ul>
+{% for product in event_list %}
+<div class="product">
+<li>{{ product.name }}</li>
+<img src="{{ product.image }}" alt="">
+<li>{{ product.price }}</li>
+<li>{{ product.description }}</li>
+</div>
+{% endfor %}
+</ul>
+
+{% endblock %}
